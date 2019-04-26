@@ -20,14 +20,14 @@ public:
 	double resultR;
 	double resultF;
 	
-	Complex plus();
+	void plus();
 	//double plusF(int, int);
 
-	Complex minus();
-
-	Complex multiply();
-
-	Complex devide();
+	void minus();
+	
+	void multiply();
+	
+	void devide();
 
 	double module(int, int);
 

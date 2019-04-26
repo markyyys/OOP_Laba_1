@@ -3,36 +3,28 @@
 
 Complex s2;
 
-Complex Complex::plus()
+void Complex::plus()
 {
-	double res1 = (a + c);
-	double res2 = (bi + di);
-
-	return Complex(res1, res2);
+	resultR = (a + c);
+	resultF = (bi + di);
 }
 
-Complex Complex::minus()
+void Complex::minus()
 {
-	double res1 = (a - c);
-	double res2 = (bi - di);
-
-	return Complex(res1, res2);
+	resultR = (a - c);
+	resultF = (bi - di);
 }
 
-Complex Complex::multiply()
+void Complex::multiply()
 {
-	double res1 = ((a * c) - (bi * di));
-	double res2 = ((a * di) + (bi * a));
-
-	return Complex(res1, res2);
+	resultR = ((a * c) - (bi * di));
+	resultF = ((a * di) + (bi * a));
 }
 
-Complex Complex::devide()
+void Complex::devide()
 {
-	double res1 = ((a * c) + (bi * di)) / ((c * c) + (di * di));
-	double res2 = ((bi * c) - (a * di)) / ((c * c) + (di * di));
-
-	return Complex(res1, res2);
+	resultR = ((a * c) + (bi * di)) / ((c * c) + (di * di));
+	resultF = ((bi * c) - (a * di)) / ((c * c) + (di * di));
 }
 
 double Complex::module(int a, int b)

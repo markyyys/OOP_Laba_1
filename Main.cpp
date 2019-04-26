@@ -28,7 +28,7 @@ int main()
 		switch (s1.sign)
 		{
 		case '+':
-			s1 = s1.plus();
+			s1.plus();
 			
 			if (s1.resultF < 0)
 				cout << s1.resultR << "+(" << s1.resultF << ")*i";
@@ -39,7 +39,7 @@ int main()
 			break;
 
 		case '-':
-			s1 = s1.minus();
+			s1.minus();
 		
 			if (s1.resultF < 0)
 				cout << s1.resultR << "+(" << s1.resultF << ")*i";
@@ -50,7 +50,7 @@ int main()
 			break;
 
 		case '*':
-			s1 = s1.multiply();
+			s1.multiply();
 			
 			if (s1.resultF < 0)
 				cout << s1.resultR << "+(" << s1.resultF << ")*i";
@@ -61,7 +61,7 @@ int main()
 			break;
 
 		case '/':
-			s1 = s1.devide();
+			s1.devide();
 		
 			if (s1.resultF < 0)
 				cout << s1.resultR << "+(" << s1.resultF << ")*i";
